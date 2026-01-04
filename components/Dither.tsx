@@ -165,11 +165,14 @@ interface RetroEffectProps {
   pixelSize: number;
 }
 
-const RetroEffect = forwardRef<typeof WrappedRetro, RetroEffectProps>((props, ref) => {
+
+const RetroEffect = forwardRef<any, RetroEffectProps>((props, ref) => {
   const { colorNum, pixelSize } = props;
   return <WrappedRetro ref={ref} colorNum={colorNum} pixelSize={pixelSize} />;
 });
+
 RetroEffect.displayName = 'RetroEffect';
+
 
 interface DitheredWavesProps {
   waveSpeed: number;
