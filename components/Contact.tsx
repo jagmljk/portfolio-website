@@ -22,9 +22,9 @@ const socialLinks = [
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/jaganm05',
+    href: 'https://github.com/jagmljk',
     icon: FaGithub,
-    label: 'github.com/jaganm05',
+    label: 'github.com/jagmljk',
     color: 'hover:bg-neutral-500/10 hover:text-neutral-900 dark:hover:text-white hover:border-neutral-500/30',
   },
 ]

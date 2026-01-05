@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { HiExternalLink, HiCode, HiChip, HiHeart, HiAcademicCap } from 'react-icons/hi'
+import { FaGithub } from 'react-icons/fa'
 
 const projects = [
   {
@@ -26,6 +27,7 @@ const projects = [
     icon: HiHeart,
     color: 'from-red-500 to-pink-500',
     features: ['Custom Algorithms', 'Signal Processing', 'LCD Display'],
+    github: 'https://github.com/jagmljk/Arduino-Blood-Pressure-Monitor',
   },
   {
     title: 'HokieHand Planner',
@@ -140,6 +142,20 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
+
+                    {/* GitHub Link */}
+                    {'github' in project && project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
+                      >
+                        <FaGithub className="w-4 h-4" />
+                        View Code
+                        <HiExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
                   </div>
 
                   {/* Hover Border Effect */}
@@ -159,7 +175,7 @@ export default function Projects() {
             className="text-center mt-12"
           >
             <a
-              href="https://github.com/jaganm05"
+              href="https://github.com/jagmljk"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-accent-600 dark:text-accent-400 font-medium hover:underline"
