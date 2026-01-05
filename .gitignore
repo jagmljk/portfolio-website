@@ -36,3 +36,13 @@ next-env.d.ts
 # IDE
 .idea
 .vscode
+
+# build artifacts
+.next/
+node_modules/
+
+# local tooling
+.claude/
+
+# windows landmines
+nul
