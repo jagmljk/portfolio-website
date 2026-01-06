@@ -7,7 +7,7 @@ import { FaGithub } from 'react-icons/fa'
 
 const projects = [
   {
-    title: 'Real-Time Embedded Systems Suite',
+    title: 'MSP432 Embedded Systems Suite',
     description:
       'Interactive applications featuring graphics rendering, real-time control systems, and embedded game implementations. Demonstrates proficiency in low-level programming and hardware optimization.',
     longDescription:
@@ -16,6 +16,7 @@ const projects = [
     icon: HiChip,
     color: 'from-blue-500 to-indigo-500',
     features: ['Custom Graphics Engine', 'Real-Time Scheduling', 'Hardware Optimization'],
+    github: 'https://github.com/jagmljk/MSP432-Embedded-Systems-Suite',
   },
   {
     title: 'Blood Pressure Monitor',
