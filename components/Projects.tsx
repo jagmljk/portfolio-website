@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { HiExternalLink, HiCode, HiChip, HiHeart, HiAcademicCap } from 'react-icons/hi'
+import { HiExternalLink, HiCode, HiChip, HiHeart, HiChartBar } from 'react-icons/hi'
 import { FaGithub } from 'react-icons/fa'
 
 const projects = [
@@ -31,15 +31,16 @@ const projects = [
     github: 'https://github.com/jagmljk/Arduino-Blood-Pressure-Monitor',
   },
   {
-    title: 'HokieHand Planner',
+    title: 'NBA Game Predictor',
     description:
-      'Full-stack web application helping Virginia Tech students plan their academic journey with intelligent course scheduling and degree progress tracking.',
+      'Machine learning application that predicts NBA game outcomes using historical data, player statistics, and advanced analytics with high accuracy.',
     longDescription:
-      'Built a comprehensive academic planning platform with user authentication, course database integration, and intelligent scheduling algorithms that consider prerequisites and availability.',
-    tech: ['React', 'TypeScript', 'MongoDB', 'Node.js'],
-    icon: HiAcademicCap,
+      'Built a predictive model using Python and scikit-learn that analyzes team performance metrics, player statistics, and historical matchup data to forecast NBA game results with competitive accuracy.',
+    tech: ['Python', 'scikit-learn', 'Pandas', 'NumPy'],
+    icon: HiChartBar,
     color: 'from-orange-500 to-amber-500',
-    features: ['Course Scheduling', 'Degree Tracking', 'User Dashboard'],
+    features: ['Game Predictions', 'Statistical Analysis', 'Data Visualization'],
+    github: 'https://github.com/jagmljk/NBA-Predictor',
   },
 ]
 
